@@ -68,7 +68,7 @@ const Title = () => {
     <div>
       <Layout>
         <TitleWrapper>
-          <WeddingInvitation>하은이의 첫번째 생일</WeddingInvitation>
+          <WeddingInvitation>하은이의 첫 번째 생일</WeddingInvitation>
           <GroomBride>하은이 돌잔치</GroomBride>
           <Schedule>
             {WEDDING_DATE}
