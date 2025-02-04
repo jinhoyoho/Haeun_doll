@@ -72,8 +72,8 @@ const Share = () => {
         objectType: "feed",
         container: "#sendKakao",
         content: {
-          title: `${GROOM_NAME}❤${BRIDE_NAME} 결혼식에 초대합니다`,
-          description: "아래의 '청첩장 열기' 버튼을 눌러 읽어주세요🤵👰",
+          title: `하은이ㄴ 돌잔치에 초대합니다`,
+          description: "아래의 '돌잔치 열기' 버튼을 눌러 읽어주세요",
           imageUrl: KAKAOTALK_SHARE_IMAGE,
           link: {
             mobileWebUrl: window.location.href,
@@ -82,7 +82,7 @@ const Share = () => {
         },
         buttons: [
           {
-            title: "청첩장 열기",
+            title: "돌잔치 열기",
             link: {
               mobileWebUrl: window.location.href,
               webUrl: window.location.href,
@@ -94,7 +94,7 @@ const Share = () => {
 
       setTimeout(() => {
         document.getElementById("sendKakao")?.click();
-        message.success("카카오톡으로 청첩장을 공유합니다!");
+        message.success("카카오톡으로 돌잔치 초대장을 공유합니다!");
       }, 100);
     }
   };
@@ -106,7 +106,7 @@ const Share = () => {
         plain
         style={{ marginTop: 0, marginBottom: 32 }}
       >
-        <Title>청첩장 공유하기</Title>
+        <Title>돌잔치 초대장 공유하기</Title>
       </Divider>
       <KakaoTalkShareButton
         style={{ margin: 0 }}
@@ -122,7 +122,7 @@ const Share = () => {
           style={{ margin: 0 }}
           icon={<LinkOutlined />}
           size="large"
-          onClick={() => message.success("청첩장 링크가 복사되었습니다.")}
+          onClick={() => message.success("초대장 링크가 복사되었습니다.")}
         >
           링크로 공유하기
         </LinkShareButton>

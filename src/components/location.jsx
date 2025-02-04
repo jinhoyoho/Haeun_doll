@@ -47,8 +47,8 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1652464367301",
-    "key" : "2a8fe",
+    "timestamp" : "1738664599250",
+    "key" : "2mxf7",
     "mapWidth" : "640",
     "mapHeight" : "360"
   }).render();`);
@@ -103,23 +103,10 @@ const Location = () => {
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        대구 수성구 두산동 888-2번지
+        경기 파주시 탄현면 요풍길 117
         <br />
-        호텔수성 수성스퀘어 3층 피오니홀
+        파티수 파주한옥점
         <br />
-        <br />
-        <Title>버스 이용시</Title>
-        <br />
-        <br />
-        410-1, 401 호텔수성 앞 하차
-        <br />
-        수성1-1, 수성3-1, 814 TBC방송국 앞 하차
-        <br />
-        <br />
-        <Title>지하철 이용시</Title>
-        <br />
-        <br />
-        3호선 수성못역 하차 (도보 10분)
       </Content>
     </Wrapper>
   );

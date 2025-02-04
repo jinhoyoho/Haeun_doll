@@ -6,7 +6,7 @@ import {
   GROOM_NAME,
   BRIDE_NAME,
 } from "../../config.js";
-import BackgroundVideo from "../assets/BackgroundVideo.mp4";
+import BackgroundVideo from "../assets/haeun_video.mp4";
 import GroovePaper from "../assets/GroovePaper.png";
 
 const Layout = styled.div`
@@ -53,10 +53,8 @@ const Title = () => {
   return (
     <Layout>
       <TitleWrapper>
-        <WeddingInvitation>WEDDING INVITATION</WeddingInvitation>
-        <GroomBride>
-          {GROOM_NAME} &#38; {BRIDE_NAME}
-        </GroomBride>
+        <WeddingInvitation>하은이의 첫번째 생일</WeddingInvitation>
+        <GroomBride>하은이 돌잔치</GroomBride>
         <Schedule>
           {WEDDING_DATE}
           <br />
