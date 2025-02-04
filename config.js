@@ -1,5 +1,5 @@
 export const WEDDING_INVITATION_URL = "https://haeunbirthday.netlify.app/";
-export const KAKAOTALK_API_TOKEN = "JavaScript 키 입력";
+export const KAKAOTALK_API_TOKEN = "1ac590c836fc6b08675cacbed8e850ef";
 export const KAKAOTALK_SHARE_IMAGE =
   "https://cdn.pixabay.com/photo/2014/11/13/17/04/heart-529607_960_720.jpg";
 

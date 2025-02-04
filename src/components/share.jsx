@@ -72,7 +72,7 @@ const Share = () => {
         objectType: "feed",
         container: "#sendKakao",
         content: {
-          title: `하은이ㄴ 돌잔치에 초대합니다`,
+          title: `하은이 돌잔치에 초대합니다`,
           description: "아래의 '돌잔치 열기' 버튼을 눌러 읽어주세요",
           imageUrl: KAKAOTALK_SHARE_IMAGE,
           link: {
