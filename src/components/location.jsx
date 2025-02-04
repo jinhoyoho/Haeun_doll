@@ -47,10 +47,10 @@ const Location = () => {
   const executeScript = () => {
     const scriptTag = document.createElement("script");
     const inlineScript = document.createTextNode(`new daum.roughmap.Lander({
-    "timestamp" : "1738664599250",
-    "key" : "2mxf7",
-    "mapWidth" : "640",
-    "mapHeight" : "360"
+    "timestamp" : "1738670586882",
+    "key" : "2mxfm",
+    "mapWidth" : "100%",
+    "mapHeight" : "240"
   }).render();`);
     scriptTag.appendChild(inlineScript);
     document.body.appendChild(scriptTag);
@@ -99,11 +99,11 @@ const Location = () => {
       </Divider>
       <Image src={Flower} />
       <Map
-        id="daumRoughmapContainer1652464367301"
+        id="daumRoughmapContainer1738670586882"
         className="root_daum_roughmap root_daum_roughmap_landing"
       ></Map>
       <Content>
-        경기 파주시 탄현면 요풍길 117
+        경기도 파주시 탄현면 요풍길 117
         <br />
         파티수 파주한옥점
         <br />
