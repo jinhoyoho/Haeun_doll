@@ -1,11 +1,19 @@
 import React, { useEffect } from "react";
 import { Divider } from "antd";
+import ImageGallery from "react-image-gallery";
 import styled from "styled-components";
 import Flower from "../assets/flower2.png";
+import MapPic from "../assets/haeun_pic2.jpg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
-  width: 70%;
+  width: 80%;
+  margin: 0 auto;
+`;
+
+const ImgWrapper = styled.div`
+  padding-top: 24px;
+  width: 100%;
   margin: 0 auto;
 `;
 
@@ -56,6 +64,12 @@ const Location = () => {
     document.body.appendChild(scriptTag);
   };
 
+  const images = [
+    {
+      original: MapPic,
+    },
+  ];
+
   // <!-- 2. 설치 스크립트 * 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다. -->
   // document.write 문제가 발생해서 해당 파일을 직접 가져온다음 수정했음
   const InstallScript = () => {
@@ -93,22 +107,32 @@ const Location = () => {
   }, [InstallScript]);
 
   return (
-    <Wrapper>
-      <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
-        <Title>오시는 길</Title>
-      </Divider>
-      <Image src={Flower} />
-      <Map
-        id="daumRoughmapContainer1738670586882"
-        className="root_daum_roughmap root_daum_roughmap_landing"
-      ></Map>
-      <Content>
-        경기도 파주시 탄현면 요풍길 117
-        <br />
-        파티수 파주한옥점
-        <br />
-      </Content>
-    </Wrapper>
+    <div>
+      <Wrapper>
+        <Divider plain style={{ marginTop: 0, marginBottom: 32 }}>
+          <Title>오시는 길</Title>
+        </Divider>
+        <Image src={Flower} />
+        <Map
+          id="daumRoughmapContainer1738670586882"
+          className="root_daum_roughmap root_daum_roughmap_landing"
+        ></Map>
+        <Content>
+          경기도 파주시 탄현면 요풍길 117
+          <br />
+          파티수 파주한옥점
+          <br />
+        </Content>
+      </Wrapper>
+
+      <ImgWrapper>
+        <ImageGallery
+          showPlayButton={false}
+          showFullscreenButton={false}
+          items={images}
+        />
+      </ImgWrapper>
+    </div>
   );
 };
 

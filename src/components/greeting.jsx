@@ -48,7 +48,7 @@ const Image = styled.img`
   display: block;
   margin: 0 auto;
   width: 1.375rem;
-  padding-bottom: 42px;
+  padding-bottom: 24px;
 `;
 
 const Greeting = () => {
@@ -59,7 +59,25 @@ const Greeting = () => {
       </Divider>
       <Image data-aos="fade-up" src={Flower} />
       <Content data-aos="fade-up">
-        하은이의 첫 번째 생일에 당신을 초대합니다!
+        2025.02.23
+        <br />
+        <br />
+        초대합니다
+        <br />
+        <br />
+        품에 보듬어 안기도 조심스러웠던 하은이가, 어느덧 건강하게 자라 첫 생일을
+        맞이했습니다.
+        <br />
+        아낌 없는 관심과 사랑을 보내주신 덕분에 예쁘고 건강하게 첫 생일을
+        맞이합니다.
+        <br />
+        감사드리는 마음으로 소중한 분들과 함께 할 수 있는 정성 어린 자리를
+        마련하였습니다.
+        <br />
+        오셔서 함께 축하해 주세요.
+        <br />
+        <br />
+        아빠 이경배 엄마 이주연
         <br />
       </Content>
       {/* <GroomBride data-aos="fade-up">
