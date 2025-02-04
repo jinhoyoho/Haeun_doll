@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ImageGallery from "react-image-gallery";
 import {
   WEDDING_DATE,
   WEDDING_LOCATION,
@@ -8,6 +9,7 @@ import {
 } from "../../config.js";
 import BackgroundVideo from "../assets/haeun_video.mp4";
 import GroovePaper from "../assets/GroovePaper.png";
+import Hauenmain from "../assets/hauen_main.jpg";
 
 const Layout = styled.div`
   width: 70%;
@@ -49,22 +51,45 @@ const Schedule = styled.p`
   opacity: 0.65;
   margin-bottom: 24px;
 `;
+
+const Wrapper = styled.div`
+  width: 100%;
+  height: 100%;
+`;
+
+const images = [
+  {
+    original: Hauenmain,
+  },
+];
+
 const Title = () => {
   return (
-    <Layout>
-      <TitleWrapper>
-        <WeddingInvitation>하은이의 첫번째 생일</WeddingInvitation>
-        <GroomBride>하은이 돌잔치</GroomBride>
-        <Schedule>
-          {WEDDING_DATE}
-          <br />
-          {WEDDING_LOCATION}
-        </Schedule>
-      </TitleWrapper>
-      {/* <VideoBackground autoPlay loop muted playsInline={true}>
+    <div>
+      <Layout>
+        <TitleWrapper>
+          <WeddingInvitation>하은이의 첫번째 생일</WeddingInvitation>
+          <GroomBride>하은이 돌잔치</GroomBride>
+          <Schedule>
+            {WEDDING_DATE}
+            <br />
+            {WEDDING_LOCATION}
+          </Schedule>
+        </TitleWrapper>
+
+        {/* <VideoBackground autoPlay loop muted playsInline={true}>
         <source src={BackgroundVideo} type="video/mp4" />
       </VideoBackground> */}
-    </Layout>
+      </Layout>
+
+      <Wrapper>
+        <ImageGallery
+          showPlayButton={false}
+          showFullscreenButton={false}
+          items={images}
+        />
+      </Wrapper>
+    </div>
   );
 };
 
