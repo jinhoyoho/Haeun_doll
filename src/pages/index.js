@@ -46,9 +46,9 @@ const IndexPage = () => {
   });
   return (
     <Wrapper>
-      <audio autoPlay loop>
-        <source src={Song} />
-      </audio>
+      {/* <audio autoPlay loop> */}
+      {/* <source src={Song} /> */}
+      {/* </audio> */}
       <Title />
       {/* <Greeting /> */}
       <Gallery />

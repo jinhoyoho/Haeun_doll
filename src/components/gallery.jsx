@@ -18,7 +18,8 @@ import GalleryPhoto12 from "../assets/haeun_sub_pic12.jpg";
 
 const Wrapper = styled.div`
   padding-top: 42px;
-  width: 70%;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
 `;
 
